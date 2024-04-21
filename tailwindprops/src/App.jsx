@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <h1 classNameName='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
+      <h1 classNameNameName='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
       <Card channel="chai aur code" username="Shami" btnText="click me!" />
       <Card channel="chai aur code" username="Shamsher singh"/>
 
