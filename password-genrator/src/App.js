@@ -10,7 +10,7 @@ function App() {
 
   const copyClipboard = useCallback(() => {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0,3)
+    passwordRef.current?.setSelectionRange(0,6)
     window.navigator.clipboard.writeText(password)
   },[password])
 
@@ -37,27 +37,27 @@ function App() {
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
-        <h1 className='text-white text-4xl my-3 text-center'> Password Generator</h1>
-        <div className='flex shadow rounded-lg overflow-hidden mb-4'>
-          <input type='text' value={password} className='outline-none w-full py-1 px-3' placeholder='Password' readOnly  ref={passwordRef}/>
+      <div classNameName='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
+        <h1 classNameName='text-white text-4xl my-3 text-center'> Password Generator</h1>
+        <div classNameName='flex shadow rounded-lg overflow-hidden mb-4'>
+          <input type='text' value={password} classNameName='outline-none w-full py-1 px-3' placeholder='Password' readOnly  ref={passwordRef}/>
 
-          <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' onClick={copyClipboard}>copy</button>
+          <button classNameName='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' onClick={copyClipboard}>copy</button>
 
         </div>
-        <div className='flex text-sm gap-x-2'>
-          <div className='flex items-center gap-x-1'>
+        <div classNameName='flex text-sm gap-x-2'>
+          <div classNameName='flex items-center gap-x-1'>
             <input
               type="range"
               min={6}
               max={100}
               value={length}
-              className='cursor-pointer'
+              classNameName='cursor-pointer'
               onChange={(e) => { setLength(e.target.value) }}
             />
             <label>Length: {length}</label>
           </div>
-          <div className='flex items-center gap-x-1'>
+          <div classNameName='flex items-center gap-x-1'>
             <input
               type='checkbox'
               defaultChecked={numberAllowed}
