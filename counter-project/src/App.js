@@ -25,13 +25,13 @@ function App() {
   },[counter])
 
   return (
-    <div classNameName="App align-items-center w-50 m-auto py-5">
+    <div classNameNameName="App align-items-center w-50 m-auto py-5">
     <h1>Counter project</h1>
     <h2>Counter value: {counter}</h2>
 
-<div classNameName='d-flex justify-content-around align-items-center py-5'>
-    <button classNameName='btn btn-info' onClick={addValue}>Add value {counter}</button> <br />
-    <button classNameName='btn btn-warning' onClick={minusValue}>Remove value</button>
+<div classNameNameName='d-flex justify-content-around align-items-center py-5'>
+    <button classNameNameName='btn btn-info' onClick={addValue}>Add value {counter}</button> <br />
+    <button classNameNameName='btn btn-warning' onClick={minusValue}>Remove value</button>
     </div>
     </div>
   );
